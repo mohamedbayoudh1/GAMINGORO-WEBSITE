@@ -1,20 +1,34 @@
-
-###> symfony/framework-bundle ###
-/.env.local
-/.env.local.php
-/.env.*.local
-/config/secrets/prod/prod.decrypt.private.php
-/public/bundles/
+# Symfony-specific
 /var/
+/bin/
+/app/config/parameters.yml
+/app/bootstrap.php.cache
+/web/bundles/
+
+# Common IDE files
+.idea/
+.vscode/
+*.iml
+
+# Build artifacts
+/target/
+/public/bundles/
+/public/build/
+/var/
+/var/cache/
+/var/logs/
+/var/sessions/
+
+# Composer
 /vendor/
-###< symfony/framework-bundle ###
+/composer.phar
 
-###> phpunit/phpunit ###
-/phpunit.xml
-.phpunit.result.cache
-###< phpunit/phpunit ###
+# Local configuration file (for environment-specific settings)
+/.env
 
-###> symfony/phpunit-bridge ###
-.phpunit.result.cache
-/phpunit.xml
-###< symfony/phpunit-bridge ###
+# Logs
+/log/
+
+# User-specific files
+/.phpstorm.meta.php
+.phpstorm.meta.php
